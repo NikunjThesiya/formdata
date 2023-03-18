@@ -196,7 +196,6 @@ const AddEditPerson = () => {
 						register={register}
 						inputClass={errors?.profileImage && "error-input"}
 						error={errors?.profileImage}
-						validation={VALIDATION.image}
 						onChange={(e) => handleImageChange(e)}
 					/>
 					<Input

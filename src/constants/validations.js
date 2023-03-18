@@ -31,7 +31,4 @@ export const VALIDATION = {
 			message: "Password must have one special character and digit",
 		},
 	},
-	image: {
-		required: "This field is required",
-	},
 };
