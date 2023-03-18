@@ -4,8 +4,8 @@ const initialState = {
 		{
 			id: 1576996323453,
 			name: "Nikunj",
-			email: "nikunj.thesiya@yudiz.com",
-			password: "Nikunj@8055",
+			email: "nikunj.thesiya@gmail.com",
+			password: "Nikunj123",
 			date: "2023-03-18",
 			city: {
 				id: "1",
