@@ -1,0 +1,77 @@
+$primary-color: #3a78c9;
+$primary-border-color: #3a78c99e;
+$primary-dark-color: #084595;
+$primary-light-color: #d0dff4a7;
+$light-color: #fff;
+$dark-color: rgb(47, 47, 47);
+$gray-color: #CCCCCC;
+$gray-dark-color: #858484;
+$gray-light-color: #cccccc46;
+$dark-light-color: rgba(20, 20, 20, 0.74);
+$dark-light-color-2: rgba(20, 20, 20, 0.76);
+
+@mixin buttonFilled($bg, $padding-x, $padding-y, $font-size, $hover-color, $font-color) {
+  background: $bg;
+  border: none;
+  outline: none;
+  font-size: $font-size;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: $bg;
+  padding: $padding-y $padding-x;
+  color: $font-color;
+  &:hover
+{
+    background: $hover-color;
+    color: $font-color;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@mixin buttonOutlined($bg,
+  $padding-x,
+  $padding-y,
+  $font-size,
+  $font-color,
+  $border-color,
+  $hover-font-color) {
+  background: $bg;
+  font-size: 16px;
+  border: 1px solid $border-color;
+  outline: none;
+  font-size: $font-size;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: $bg;
+  padding: $padding-y $padding-x;
+  color: $font-color;
+
+  &:hover {
+    background: $font-color;
+    color: $hover-font-color;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@mixin for-small-screen {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-medium-screen {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-large-screen {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-extralarge-screen {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

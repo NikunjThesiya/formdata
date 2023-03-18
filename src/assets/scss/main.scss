@@ -1,0 +1,13 @@
+// Helper
+@import './helper/variables';
+
+// Root File
+@import './index';
+
+// Components
+@import './components/input';
+@import './components/modal';
+
+// Views
+@import './views/home';
+@import './views/addEditPerson';

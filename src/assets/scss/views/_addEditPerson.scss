@@ -1,0 +1,59 @@
+@use "../helper/variables";
+
+.addEditPerson{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+
+  &-heading{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h1{
+    text-transform: uppercase;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  form{
+    width: 100%;
+    @include variables.for-medium-screen {
+      width: 500px;
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  .input-select{
+    border-radius: 8px;
+    .css-13cymwt-control{
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid $primary-border-color;
+      background-color: $light-color;
+      outline: none;
+      border-radius: 8px;
+      font-size: 14px;
+      }
+  }
+  .btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    button{
+      width: 100%;
+      margin-top: 12px;
+    }
+  }
+}
